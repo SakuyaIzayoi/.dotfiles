@@ -1,0 +1,11 @@
+#!/bin/bash
+
+status=$(rc-status default | grep docker | awk '{print $3}')
+
+echo "Docker:$(docker ps -q 2>/dev/null | wc -l)"
+echo
+if [[ $status == started ]]; then
+  echo \#5ba7c3
+else
+  echo \#d03f3f
+fi

@@ -1,0 +1,15 @@
+shadow = true;
+no-dnd-shadow = true;
+no-dock-shadow = true;
+clear-shadow = true;
+
+shadow-exclude = [
+	"name = 'i3bar'",
+	"name *= 'Firefox'",
+	"name = 'conky'",
+	"name *= 'dmenu'",
+	"name = 'ddd'",
+        "name *= 'chrome'"
+]
+
+shadow-ignore-shaped = false;

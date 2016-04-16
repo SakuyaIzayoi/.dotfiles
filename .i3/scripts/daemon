@@ -1,0 +1,11 @@
+#!/bin/bash
+
+status=$(rc-status default | grep $1 | awk '{print $3}')
+
+echo "$2"
+echo
+if [[ $status == started ]]; then
+  echo \#b8bb26
+else
+  echo \#d03f3f
+fi

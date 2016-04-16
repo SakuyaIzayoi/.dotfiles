@@ -1,0 +1,12 @@
+#!/bin/bash
+
+packages=$(ls -d /var/db/pkg/*/* | wc -l)
+updates=$(eix -IQu0 | awk '{print $1}')
+
+echo $packages
+echo
+if [[ $updates == No ]]; then
+  echo \#b8bb26
+else
+  echo \#d79921
+fi

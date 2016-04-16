@@ -1,0 +1,17 @@
+set realname "Alessandro Gangemi"
+set username "ag"
+set hostname "lichfor.me"
+
+posting_host "lichfor.me"
+set generate_message_id 1
+
+charset display utf8
+charset outgoing utf8
+
+set editor_command "vim '+set tw=72' +%d '%s'"
+
+setkey group "set_prefix_argument(4); () = select_group();" " "
+
+set sorting_method 12
+set custom_sort_order Date
+set custom_sort_by_threads 1
